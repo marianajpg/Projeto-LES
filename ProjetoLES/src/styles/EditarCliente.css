@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+
+:root{
+  --primary-color: #752512;
+  --secondary-color: #A73A21;
+  --tertiary-color: #C65338;
+  --quaternary-color: #FEAA80;
+  --quinary-color: #FDBC9B;
+  --senary-color: #FFEBE1;
+  --septenary-color-vibrant: #ee5e3a;
+}
+
+
+.editar-cliente-container {
+  padding: 20px;
+  font-family: 'Poppins', sans-serif;
+  background-color: #fffff;
+  border-radius: 8px;
+  max-width: 900px;
+  margin: 20px auto;
+  
+}
+
+.editar-cliente-container h1 {
+  font-size: 24px;
+  color: #752512;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.editar-cliente-fieldset :last-child{
+  margin-bottom: 0;
+}
+
+.editar-cliente-fieldset {
+  border: 1px solid #e8ccc0;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.editar-cliente-legend {
+  font-size: 18px;
+  color: #752512;
+  font-weight: 500;
+}
+
+.editar-cliente-form-group {
+  margin-bottom: 15px;
+}
+
+.editar-cliente-form-group input {
+  width: 97%;
+  padding: 10px;
+  border: 1px solid var(--senary-color);
+  border-radius: 8px;
+  font-size: 14px;
+  color: #333;
+  outline: none;
+  margin-bottom: 12px;
+  color: var(--primary-color);
+}
+
+.editar-cliente-form-group :last-child {
+  margin-bottom: 0;
+}
+
+.editar-cliente-form-group input:focus {
+  border-color: #752512;
+}
+.editar-cliente-checkbox {
+  margin-right: 10px;
+}
+
+.editar-cliente-checkbox-custom {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border: 2px solid var(--senary-color);
+  border-radius: 4px;
+  background-color: #fff;
+  margin-right: 10px;
+}
+
+.editar-cliente-checkbox:checked + .editar-cliente-checkbox-custom {
+  background-color: var(--tertiary-color);
+  border-color: var(--tertiary-color);
+}
+
+
+/* Estilo para os botões de status */
+.status-botoes {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.status-botao {
+  padding: 10px 20px;
+  border: 2px solid transparent; 
+  border-radius: 20px; 
+  background-color: #f0f0f0; /* Cor de fundo padrão */
+  color: vat(--primary-color); 
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+.status-botao.ativo {
+  background-color: var(--septenary-color-vibrant); /* Azul para "Ativado" */
+  color: #fff; /* Texto branco */
+ 
+}
+
+.status-botao.desativado {
+  background-color: #bb533a; /* Vermelho para "Desativado" */
+  color: #fff; /* Texto branco */
+ 
+}
+
+.status-botao:hover {
+  opacity: 0.9; 
+}
+
+/* Estilos para os botões de ação */
+.editar-cliente-botoes-acoes {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 40px;
+}
+
+.editar-cliente-botoes-acoes button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.editar-cliente-botoes-acoes button[type="submit"] {
+  background-color:  var(--tertiary-color);
+  color: #fff;
+}
+
+.editar-cliente-botoes-acoes button[type="submit"]:hover {
+  background-color:  var(--secondary-color);
+}
+
+.editar-cliente-botoes-acoes button[type="button"] {
+  background-color:  var(--senary-color);
+  color: var(--primary-color);
+}
+
+.editar-cliente-botoes-acoes button[type="button"]:hover {
+  background-color: var(--quaternary-color);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .editar-cliente-container {
+    padding: 15px;
+  }
+
+  .editar-cliente-form-group input {
+    font-size: 14px;
+  }
+
+  .editar-cliente-botoes-acoes {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .editar-cliente-botoes-acoes button {
+    width: 100%;
+  }
+}
